@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family Hotel</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f8f9fa;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav h1 {
+    color: #2c3e50;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1566073771259-6a8506099945') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 50px;
+}
+
+.hero p {
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #e67e22;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Section */
+section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.rooms {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Booking */
+.booking input, .booking select {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <h1>Family Hotel</h1>
+    <ul>
+        <li>Home</li>
+        <li>Rooms</li>
+        <li>Amenities</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <div>
+        <h2>Your Home Away From Home</h2>
+        <p>Luxury stay for your family comfort</p>
+        <button class="btn">Book Now</button>
+    </div>
+</div>
+
+<section>
+    <h2>Our Rooms</h2>
+    <div class="rooms">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+            <h3>Standard Room</h3>
+            <p>₹2000 / night</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+            <h3>Deluxe Room</h3>
+            <p>₹3500 / night</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+            <h3>Family Suite</h3>
+            <p>₹5000 / night</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Amenities</h2>
+    <p>Free WiFi | Parking | Restaurant | Room Service | Kids Play Area</p>
+</section>
+
+<section class="booking">
+    <h2>Book Your Stay</h2>
+    <input type="date">
+    <input type="date">
+    <select>
+        <option>Guests</option>
+        <option>1</option>
+        <option>2</option>
+        <option>Family</option>
+    </select>
+    <br>
+    <button class="btn">Check Availability</button>
+</section>
+
+<section>
+    <h2>Contact Us</h2>
+    <p>Email: info@familyhotel.com</p>
+    <p>Phone: +91 9876543210</p>
+</section>
+
+<footer>
+    <p>© 2026 Family Hotel | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
